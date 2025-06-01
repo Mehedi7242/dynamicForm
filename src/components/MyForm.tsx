@@ -1,5 +1,5 @@
 "use client"
-
+import Swal from 'sweetalert2'
 import { toast } from "sonner"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -90,17 +90,33 @@ export default function MyForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      console.log(values)
+      console.log(values);
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Form Submitted!',
+        text: 'SweetAlert2 is working correctly.',
+        confirmButtonColor: '#3085d6'
+      });
+
       toast(
         <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
           <code className="text-white">
             {JSON.stringify(values, null, 2)}
           </code>
         </pre>
-      )
+      );
     } catch (error) {
-      console.error("Form submission error", error)
-      toast.error("Failed to submit the form. Please try again.")
+      console.error("Form submission error", error);
+
+      Swal.fire({
+        icon: 'error',
+        title: 'Submission Failed',
+        text: 'Failed to submit the form. Please try again.',
+        confirmButtonColor: '#d33'
+      });
+
+      toast.error("Failed to submit the form. Please try again.");
     }
   }
 
