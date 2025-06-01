@@ -23,10 +23,10 @@ export default function Navbar() {
             <a href="/" className="text-black dark:text-white hover:text-gray-500 transition">
               Home
             </a>
-            <a href="/about" className="text-black dark:text-white hover:text-gray-500 transition">
+            <a href="/" className="text-black dark:text-white hover:text-gray-500 transition">
               About
             </a>
-            <a href="/contact" className="text-black dark:text-white hover:text-gray-500 transition">
+            <a href="/" className="text-black dark:text-white hover:text-gray-500 transition">
               Contact
             </a>
             <Button size="sm" variant="default">
@@ -49,10 +49,10 @@ export default function Navbar() {
           <a href="/" className="block text-black dark:text-white hover:text-gray-500 transition">
             Home
           </a>
-          <a href="/about" className="block text-black dark:text-white hover:text-gray-500 transition">
+          <a href="/" className="block text-black dark:text-white hover:text-gray-500 transition">
             About
           </a>
-          <a href="/contact" className="block text-black dark:text-white hover:text-gray-500 transition">
+          <a href="/" className="block text-black dark:text-white hover:text-gray-500 transition">
             Contact
           </a>
           <Button size="sm" className="w-full">
