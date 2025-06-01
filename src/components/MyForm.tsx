@@ -95,7 +95,7 @@ export default function MyForm() {
       Swal.fire({
         icon: 'success',
         title: 'Form Submitted!',
-        text: 'SweetAlert2 is working correctly.',
+        text: 'Thank You',
         confirmButtonColor: '#3085d6'
       });
 
